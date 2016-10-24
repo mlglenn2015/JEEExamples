@@ -1,0 +1,127 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>prv.mark.test</groupId>
+    <artifactId>healthcheck</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <name>Mark Test Projects</name>
+    <description>Test</description>
+    <organization>
+        <name>Mark</name>
+    </organization>
+    <developers>
+        <developer>
+            <id>mlglenn</id>
+            <name>Mark Glenn</name>
+            <email>mark2005glenn@yahoo.com</email>
+            <organization>Mark</organization>
+            <organizationUrl></organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>-5</timezone>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection></connection>
+    </scm>
+
+    <ciManagement>
+        <system></system>
+        <url>git@github.com:mlglenn2015/JEEExamples.git</url>
+        <notifiers>
+            <notifier>
+                <type>mail</type>
+                <configuration>
+                    <recipients>mark2005glenn@yahoo.com</recipients>
+                </configuration>
+                <sendOnError>true</sendOnError>
+                <sendOnFailure>true</sendOnFailure>
+                <sendOnSuccess>true</sendOnSuccess>
+                <sendOnWarning>true</sendOnWarning>
+            </notifier>
+        </notifiers>
+    </ciManagement>
+
+    <distributionManagement>
+
+    </distributionManagement>
+
+    <!--<repositories>
+        <repository>
+            <id>nexus</id>
+            <name>Nexus public repository</name>
+            <url></url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>-->
+
+    <!--<pluginRepositories>
+        <pluginRepository>
+            <id>nexus</id>
+            <name>Nexus public plugin repository</name>
+            <url></url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>-->
+
+    <!--<licenses>
+        <license>
+            <name>International Program License Agreement</name>
+            <url></url>
+            <distribution></distribution>
+            <comments></comments>
+        </license>
+    </licenses>-->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <build.number>0</build.number>
+        <maven.build.timestamp.format>MM/dd/yyyy</maven.build.timestamp.format>
+        <build.date>${maven.build.timestamp}</build.date>
+        <checkstyle.version>6.7</checkstyle.version>
+        <checkstyle.configLocation>src/main/resources/checkstyle-6.7/sun_checks.xml</checkstyle.configLocation>
+        <checkstyle.suppressionsLocation>src/main/resources/checkstyle-6.7/suppressions.xml</checkstyle.suppressionsLocation>
+        <checkstyle.headerLocation>src/main/resources/checkstyle-6.7/java.header</checkstyle.headerLocation>
+        <!--<checkstyle.propertyExpansion>
+            checkstyle.importcontrol.file=.././src/main/resources/checkstyle-6.7/import-control.xml
+        </checkstyle.propertyExpansion>-->
+        <findbugs.version>3.0.1</findbugs.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>healthcheck</finalName>
+    </build>
+
+    <!--<name>${project.artifactId}</name>-->
+</project>
